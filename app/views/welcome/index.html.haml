@@ -1,2 +1,6 @@
 %h1 Welcome#index
 %p Find me in app/views/welcome/index.html.haml
+
+= form_tag '', method: :post, class: 'search-songs' do
+  = text_field_tag :search_term, '', placeholder: 'Search songs', id: 'user-input'
+  = submit_tag "GO"
