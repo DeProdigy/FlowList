@@ -1,6 +1,8 @@
 class SearchController < ApplicationController
+
   def create
-    search_query
+    search = Search.new(search_query)
+    search.tracks
   end
 
   private
