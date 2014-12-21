@@ -10,7 +10,7 @@ class Search
   def tracks
     all_tracks = soundcloud_client.get('/tracks', q: query, limit: LIMIT_PER_REQUEST, licence: 'cc-by-sa')
     all_tracks.map do |track_data|
-      Track.new track_data
+      Track.new(track_data)
     end
   end
 end

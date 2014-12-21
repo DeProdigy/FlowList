@@ -2,7 +2,7 @@ class Track
   include SoundcloudHelper
   attr_reader :soundcloud_id, :user_name, :title, :duration, :stream_url
 
-  def initialize track_data
+  def initialize(track_data)
     @soundcloud_id = track_data.fetch(:id, 0)
     @user_name = track_data[:user].fetch(:username, 'username')
     @title = track_data.fetch(:title, 'title')
