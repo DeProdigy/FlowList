@@ -33,8 +33,8 @@ group :development do
   gem "terminal-notifier-guard"
 end
 
-gem "simplecov", require: false, group: :test
-gem "thin"
-gem "haml-rails"
-
+gem 'simplecov', require: false, group: :test
+gem 'thin'
+gem 'haml-rails'
+gem 'rails_12factor'
 gem 'soundcloud'
