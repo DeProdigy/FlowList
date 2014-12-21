@@ -1,18 +1,16 @@
 class Search
-  attr_reader :query
   LIMIT_PER_REQUEST = 5
+  include SoundcloudHelper
+  attr_reader :query
 
   def initialize(query)
     @query = query
   end
 
   def tracks
-    soundcloud_client.get('/tracks', q: query, limit: LIMIT_PER_REQUEST, licence: 'cc-by-sa')
-  end
-
-  private
-
-  def soundcloud_client
-    Soundcloud.new(client_id: ENV['FLOWLIST_SOUNDCLOUD_CLIENT_ID'])
+    all_tracks = soundcloud_client.get('/tracks', q: query, limit: LIMIT_PER_REQUEST, licence: 'cc-by-sa')
+    all_tracks.map do |track_data|
+      Track.new track_data
+    end
   end
 end

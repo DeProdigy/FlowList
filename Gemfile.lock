@@ -279,7 +279,7 @@ DEPENDENCIES
   guard-rspec
   haml-rails
   jasmine
-  jbuilder (~> 2.0)
+  jbuilder
   jquery-rails
   meta_request
   pg

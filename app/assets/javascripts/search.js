@@ -15,7 +15,7 @@ function getSoundsCloudSongs() {
       }
     },
     success: function(data) {
-      // debugger;
+      console.log(data);
     }
   });
 }
