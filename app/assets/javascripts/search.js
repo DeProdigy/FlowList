@@ -20,45 +20,26 @@ function getSoundsCloudSongs() {
   });
 }
 
+//Uses a custom template to create a track that can be found in search_template
 function displaySearchResults(data) {
-
   $.each(data.tracks, function(index, value) {
-    debugger;
-    balls(value);
-    // var playList =
-    // $(
-    //   '''
-    //     <div class="tracks" data-user-name=' value.user_name ' data-title=' value.title ' data-stream-url=' value.stream_url '>
-    //       <h4>' value.user_name '</h4>
-    //       <h6>' value.title '</h6>
-    //       <audio src=' value.stream_url ' controls loop></audio>
-    //     </div>
-    //   '''
-    // );
+    $('body').append(tracksTemplate(value));
   });
-
-  // body.append(playList);
-
-  // for(var i = 0; i < data.tracks.length; i++) {
-  //   var body = $('body');
-  //   var userName = "<h4>" + data.tracks[i].user_name + "</h4>";
-  //   var title = "<h6>" + data.tracks[i].title + "</h6>";
-  //   var streamUrl = "<audio src=" + data.tracks[i].stream_url + " controls loop></audio>";
-  //   var track = $("<div class='tracks' data-name='NAME'></div>");
-  //   body.append(track);
-  //   track.append(userName, title, streamUrl);
-  //   track.on("click", function() {
-  //     debugger;
-  //     selectTrack(this.data());
-  //   });
-  // }
+  selectTrack();
 }
 
-function balls(huy) {
-  debugger
-  console.log('HERE')
+function selectTrack() {
+  $('.tracks').on('click', function(e) {
+    e.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: '/songs',
+      data: {
+        'track': $(this).data()
+      },
+      success: function(data) {
+        console.log(data);
+      }
+    });
+  });
 }
-
-// function selectTrack(track) {
-//   console.log(track);
-// }
