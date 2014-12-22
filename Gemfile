@@ -39,18 +39,8 @@ group :development do
   gem 'terminal-notifier-guard'
 end
 
-<<<<<<< HEAD
 group :test do
   gem 'vcr'
   gem 'nyan-cat-formatter'
   gem 'simplecov', :require => false
 end
-
-=======
-gem 'simplecov', require: false, group: :test
-gem 'thin'
-gem 'haml-rails'
-gem 'rails_12factor'
-gem 'soundcloud'
->>>>>>> cbe207dea61b6613ab5acff012b24118ccd9b728
-gem 'bourbon'
