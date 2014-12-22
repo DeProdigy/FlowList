@@ -5,9 +5,12 @@
   %h6 Music that gets you in the zone.
 
 
+
+
 = form_tag '', method: :post, class: 'search-songs' do
   = text_field_tag :search_term, '', placeholder: 'Search songs', id: 'user-input'
   = submit_tag "GO"
+
 
 
 .player
@@ -15,6 +18,10 @@
     .pause
       .left-pause
       .right-pause
+
+.player
+  .current-song
+
 
 .menu
 
