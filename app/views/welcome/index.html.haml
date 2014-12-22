@@ -4,10 +4,6 @@
       </FLOWLIST>
   %h6 Music that gets you in the zone.
 
-= form_tag '', method: :post, class: 'search-songs' do
-  = text_field_tag :search_term, '', placeholder: 'Search songs', id: 'user-input'
-  = submit_tag "GO"
-
 .player
   .current-song
 
@@ -18,3 +14,7 @@
   .card
     %h4 Name
     %h3 Song Title
+
+/ = form_tag '', method: :post, class: 'search-songs' do
+/   = text_field_tag :search_term, '', placeholder: 'Search songs', id: 'user-input'
+/   = submit_tag "GO"
