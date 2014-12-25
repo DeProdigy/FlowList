@@ -1,10 +1,3 @@
-$(function() {
-  $('.search-songs').on('submit', function(e) {
-    e.preventDefault();
-    getSoundsCloudSongs();
-  });
-});
-
 function getSoundsCloudSongs() {
   $.ajax({
     type: "POST",
@@ -25,21 +18,26 @@ function displaySearchResults(data) {
   $.each(data.tracks, function(index, value) {
     $('body').append(tracksTemplate(value));
   });
-  selectTrack();
 }
 
 function selectTrack() {
-  $('.tracks').on('click', function(e) {
-    e.preventDefault();
-    $.ajax({
-      type: "POST",
-      url: '/songs',
-      data: {
-        'track': $(this).data()
-      },
-      success: function(data) {
-        console.log(data);
-      }
-    });
+  $.ajax({
+    type: "POST",
+    url: '/songs',
+    data: {
+      'track': $(this).data()
+    },
+    success: function(data) {
+      console.log(data);
+    }
   });
 }
+
+
+
+
+
+
+
+
+
