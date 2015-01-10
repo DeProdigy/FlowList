@@ -1,7 +1,7 @@
 function getSoundsCloudSongs() {
   $.ajax({
     type: "GET",
-    url: '/search?query=' + $('#user-input').val(),
+    url: '/v1/search?query=' + $('#user-input').val(),
     success: function(data) {
       displaySearchResults(data);
     }
