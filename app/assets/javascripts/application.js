@@ -17,5 +17,3 @@
 //= require template
 //= require search
 //= require controller
-
-
