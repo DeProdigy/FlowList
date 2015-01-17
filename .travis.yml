@@ -16,3 +16,6 @@ notifications:
   email:
     - igor.yuzovitskiy@gmail.com
     - alex.hint.ah@gmail.com
+deploy:
+  provider: heroku
+  api_key: <%= ENV['HEROKU_API_KEY'] %>
