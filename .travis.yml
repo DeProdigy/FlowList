@@ -7,3 +7,12 @@ script:
   - "bundle exec rspec spec"
 env:
   - PG_USERNAME='postgres'
+
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    - igor.yuzovitskiy@gmail.com
+    - alex.hint.ah@gmail.com
