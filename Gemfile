@@ -39,5 +39,7 @@ end
 
 gem 'thin'
 gem 'haml-rails'
-gem 'rails_12factor'
+
 gem 'soundcloud'
+
+gem 'rails_12factor'
