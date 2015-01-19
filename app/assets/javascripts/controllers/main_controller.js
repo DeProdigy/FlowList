@@ -1,11 +1,8 @@
 $(function() {
   $('.search-songs').on('submit', function(e) {
     e.preventDefault();
+    // console.time('To get, create and display songs');
     getSoundsCloudSongs();
-  });
-
-  $('.tracks').on('click', function(e) {
-    e.preventDefault();
-    selectTrack();
+    // console.timeEnd('To get, create and display songs');
   });
 });

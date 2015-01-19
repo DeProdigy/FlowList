@@ -8,9 +8,8 @@ function getSoundsCloudSongs() {
   });
 }
 
-//Uses a custom template to create a track that can be found in search_template
 function displaySearchResults(data) {
   $.each(data.songs, function(index, value) {
-    $('body').append(tracksTemplate(value));
+    songs.push(new Song(index, value).init());
   });
 }
