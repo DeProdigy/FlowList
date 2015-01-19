@@ -35,6 +35,7 @@ end
 group :test do
   gem 'vcr'
   gem 'nyan-cat-formatter'
+  gem 'simplecov', :require => false
 end
 
 gem 'thin'
