@@ -1,8 +1,13 @@
 $(function() {
   $('.search-songs').on('submit', function(e) {
     e.preventDefault();
-    // console.time('To get, create and display songs');
     getSoundsCloudSongs();
-    // console.timeEnd('To get, create and display songs');
+  });
+
+  $('body').on('click', '.results', function(e) {
+    var result_id = getId(this);
+            result  = _.findWhere(results, {id: result_id});
+
+    saveSong( result.underscored() );
   });
 });
