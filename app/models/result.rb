@@ -1,4 +1,4 @@
-class Track
+class Result
   include SoundcloudHelper
   attr_reader :soundcloud_id, :user_name, :title, :duration, :stream_url
 

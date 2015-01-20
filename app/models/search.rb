@@ -12,8 +12,8 @@ class Search
       q: query,
       limit: limit,
       licence: 'cc-by-sa'
-    ).map do |track_data|
-      Track.new(track_data)
+    ).map do |result_data|
+      Result.new(result_data)
     end
   end
 
