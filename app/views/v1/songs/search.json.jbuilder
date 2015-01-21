@@ -1,1 +1,1 @@
-json.songs @songs
+json.results @results

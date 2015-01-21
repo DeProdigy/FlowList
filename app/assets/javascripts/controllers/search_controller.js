@@ -9,7 +9,7 @@ function getSoundsCloudSongs() {
 }
 
 function displaySearchResults(data) {
-  $.each(data.songs, function(index, value) {
-    songs.push(new Song(index, value).init());
+  $.each(data.results, function(index, value) {
+    results.push(new Result(index, value).init());
   });
 }

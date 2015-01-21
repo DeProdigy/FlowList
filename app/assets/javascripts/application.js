@@ -14,8 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 
+//= require underscore
+
 //= require app
+//= require helpers/util
+//= require helpers/result_template
+//= require models/result
 //= require models/song
-//= require helpers/template
 //= require controllers/search_controller
+//= require controllers/songs_controller
 //= require controllers/main_controller
