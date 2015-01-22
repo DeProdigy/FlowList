@@ -1,0 +1,47 @@
+@import variables
+@import utilities
+
+body
+  background: $background-color
+  color: $main-font-color
+  font-family: "AvenirNext", demibold
+
+.logo
+  color: $darker-blue
+  font-family: "AvenirNext", demibold
+
+.header
+  @extend .centered-element, .padding-20
+  width: $centered-width
+
+.player
+  @extend .borded
+  background: $secondary-background-color
+  width: 100%
+  height: 150px
+
+.track
+  @extend .centered-element
+  width: $centered-width
+  // background: white
+  padding: 10px 10px 0 10px
+
+.widget
+  display: inline-block
+  background: red
+  width: 100px
+  height: 100px
+
+.card
+  @extend .padding-20
+  display: inline-block
+  background: $secondary-background-color
+  position: relative
+  float: right
+  height: 60px
+  width: 800px
+
+
+
+
+

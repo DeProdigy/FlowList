@@ -1,6 +1,20 @@
-%h1 Welcome#index
-%p Find me in app/views/welcome/index.html.haml
+.header
+  %h1.logo
+    :escaped
+      </FLOWLIST>
+  %h6 Music that gets you in the zone.
 
 = form_tag '', method: :post, class: 'search-songs' do
   = text_field_tag :search_term, '', placeholder: 'Search songs', id: 'user-input'
   = submit_tag "GO"
+
+.player
+  .current-song
+
+.menu
+
+.track
+  .widget
+  .card
+    %h4 Name
+    %h3 Song Title
