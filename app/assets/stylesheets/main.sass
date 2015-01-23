@@ -32,7 +32,7 @@ body
     top: 20px
     right: 363px
 
-.add-song-button
+.add-song-icon
   width: 40px
   height: 40px
   border-radius: 50%
@@ -41,7 +41,7 @@ body
   top: 20px
   right: 283px
 
-.rec-one
+.horizontal-rectangle
   width: 15px
   height: 3px
   background: #fff
@@ -49,7 +49,7 @@ body
   left: 12.5px
   top: 18.5px
 
-.rec-two
+.vertical-rectangle
   width: 3px
   height: 15px
   background: #fff
@@ -57,17 +57,17 @@ body
   left: 18.5px
   top: 12.5px
 
-#player
+.player
   @extend .borded, .padding-20
   background: $secondary-background-color
   padding-left: 225px
   padding-right: 225px
 
-#left
+.left-player
   height: 126px
   width: 76px
 
-.controls
+.pause-controls
   @extend .padding-20
   width: 30px
   height: 30px
@@ -75,10 +75,10 @@ body
   border-radius: 50%
   margin-bottom: 15px
 
-#pause > div
+.pause-player > div
   display: inline-block
 
-#pause
+.pause-player
   @extend .centered-element
   text-align: center
 
@@ -92,7 +92,7 @@ body
     height: 30px
     background: #fff
 
-#skip
+.song-skip-controls
   width: 100%
   text-align: center
 
@@ -117,7 +117,7 @@ body
       font-size: 20px
       margin-bottom: 36px
 
-  .upvotes
+  .song-upvotes
     display: inline-block
 
     img
@@ -128,7 +128,7 @@ body
       font-size: 20px
       margin-top: 4px
 
-#progress-bar
+.song-progress-bar
   height: 7px
   width: 603px
   background: $background-color
@@ -149,18 +149,15 @@ body
     height: 40px
     border-radius: 50%
 
-.text
+.user-status
   display: inline-block
 
   span
     color: $darker-blue
 
-
-.icon
-  width: 40px
-  height: 40px
+.icon-background
+  @extend .icon-background
   background: $background-color
-  border-radius: 50%
 
   img
     position: relative
