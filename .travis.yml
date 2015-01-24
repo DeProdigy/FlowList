@@ -1,11 +1,23 @@
 language: ruby
 rvm:
-  - 1.9.3
-before_script:
-  - "sh -e /etc/init.d/xvfb start"
-  - "export DISPLAY=:99.0"
-  - "export JASMINE_SPEC_FORMAT=documentation"
+- 2.2.0
 script:
-  - "bundle exec rake travis:run"
+- bundle exec rake db:create
+- bundle exec rake db:migrate RAILS_ENV=test
+- bundle exec rspec spec
 env:
-  - PG_USERNAME='postgres'
+- PG_USERNAME='postgres'
+branches:
+  only:
+  - master
+notifications:
+  email:
+  - igor.yuzovitskiy@gmail.com
+  - alex.hint.ah@gmail.com
+deploy:
+  provider: heroku
+  api_key:
+    secure: qeLhyeEkpSrKIAc7reJkXqeNMM/rM2br1xAafnTh29dxyU4K7zraxdC27GWNwJilaPWs9juinHQXSEMGHJnhuEiGB7dIBnAB4QTEyQpTuaq8CNr0ud523p6Fsu7TRe8I/KZZM8jPaiIWT9vzF7BIR9EMR5/eic2Rm3zG8V0a2k4=
+  app: flowlist
+  on:
+    repo: DeProdigy/FlowList

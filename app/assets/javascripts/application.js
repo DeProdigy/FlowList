@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 
-//= require template
-//= require search
-//= require controller
+//= require app
+//= require models/song
+//= require helpers/template
+//= require controllers/search_controller
+//= require controllers/main_controller

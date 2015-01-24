@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
   root to: 'welcome#index'
-  get '/search' => 'songs#search'
+
+  namespace :v1 do
+    get '/search' => 'songs#search'
+  end
 end

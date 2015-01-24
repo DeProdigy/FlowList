@@ -1,6 +1,2 @@
-TODO
-
-Change Song model / migration to only take in an ID +
-query API / chache the song instead of passing info through the params +
-remove extra data attributes
+[![Build Status](https://magnum.travis-ci.com/DeProdigy/FlowList.svg?token=b6bs9XsMu3rqycnpjhS5&branch=master)](https://magnum.travis-ci.com/DeProdigy/FlowList)
 
