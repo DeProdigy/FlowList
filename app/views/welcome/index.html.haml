@@ -1,14 +1,54 @@
-%h1 Welcome#index
-%p Find me in app/views/welcome/index.html.haml
-
 .header
   %h1.logo
     :escaped
       </FLOWLIST>
   %h6 Music that gets you in the zone.
+  .user-photo
+    = image_tag 'user_avatar.png'
+  .add-song-icon
+    .horizontal-rectangle
+    .vertical-rectangle
 
 .player
-  .current-song
+
+  .left-player.player-column
+    .pause-controls
+      .pause-player
+        %div
+        %div
+    .song-skip-controls
+      = image_tag 'backward.svg'
+      = image_tag 'forward.svg'
+
+  .middle-player.player-column
+    .song-info
+      .title-desc
+        %h4 Kayne West
+        %h3 I am a God you could unlike em
+      .song-upvotes
+        = image_tag 'upvote_icon.svg'
+        %h1 267
+    %div
+      %span 33:44
+      %span.song-progress-bar
+      %span 1:34:34
+      = image_tag 'replay_icon.svg', class: 'replay-icon'
+
+  .right-player.player-column
+    .share-icon.icon-background
+      = image_tag 'share_icon.svg'
+    .like-icon.icon-background
+      = image_tag 'like_icon.svg'
+    .chat-icon.icon-background
+      = image_tag 'chat_icon.svg'
+
+  .user-info
+    = image_tag 'user_avatar.png'
+    .user-status
+      via
+      %span Igor Yuzo
+      working on
+      %span FlowList
 
 .menu
 
@@ -21,3 +61,4 @@
 / = form_tag '', method: :post, class: 'search-songs' do
 /   = text_field_tag :search_term, '', placeholder: 'Search songs', id: 'user-input'
 /   = submit_tag "GO"
+
