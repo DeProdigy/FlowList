@@ -14,6 +14,8 @@ notifications:
   email:
   - igor.yuzovitskiy@gmail.com
   - alex.hint.ah@gmail.com
+  slack:
+    secure: CagOptA8PiBHHra+CT4+7U/4iPruiaCI7BTmsbCcJ2Nlb89Z1DH/aEeQJstUf1jl8UWVG+VNPjV1Jzvc1vyxvQgblH/VrqSLa/KR9lRy9qgrFNimWivbUIxMcN7rPWcFWj/lbQGbYmc3fQtDRdD4rLNzIa1LuCUTgHh77XweNUY=
 deploy:
   provider: heroku
   api_key:
