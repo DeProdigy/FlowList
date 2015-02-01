@@ -16,11 +16,11 @@
 
 //= require underscore
 
-//= require app
-//= require helpers/util
-//= require helpers/result_template
-//= require models/result
-//= require models/song
-//= require controllers/search_controller
-//= require controllers/songs_controller
-//= require controllers/main_controller
+//= require shared/app
+//= require shared/helpers/util
+//= require shared/helpers/result_template
+//= require shared/song_model
+
+//= require search/result_model
+//= require search/results_collection
+//= require search/search_controller

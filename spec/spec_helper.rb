@@ -11,7 +11,7 @@ SimpleCov.start
 WebMock.disable_net_connect!(allow_localhost: true)
 
 VCR.configure do |c|
-  c.default_cassette_options = { record: :all }
+  c.default_cassette_options = { record: :new_episodes }
   c.cassette_library_dir = Rails.root.join("spec", "cassettes")
   c.hook_into :webmock
   c.allow_http_connections_when_no_cassette = true
