@@ -30,6 +30,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'pry-nav'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
@@ -43,7 +45,6 @@ group :development do
 end
 
 group :test do
-  gem 'vcr'
   gem 'nyan-cat-formatter'
   gem 'simplecov', :require => false
 end

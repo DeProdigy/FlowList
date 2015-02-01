@@ -2,14 +2,27 @@ ENV["RAILS_ENV"] ||= 'test'
 require 'rails_helper'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
+require 'webmock/rspec'
+require 'vcr'
 
 require 'simplecov'
 SimpleCov.start
+
+WebMock.disable_net_connect!(allow_localhost: true)
+
+VCR.configure do |c|
+  c.default_cassette_options = { record: :all }
+  c.cassette_library_dir = Rails.root.join("spec", "cassettes")
+  c.hook_into :webmock
+  c.allow_http_connections_when_no_cassette = true
+end
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
+  # Running tests within a transaction
+  config.use_transactional_fixtures = false
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
@@ -29,17 +42,4 @@ RSpec.configure do |config|
     # `true` in RSpec 4.
     mocks.verify_partial_doubles = true
   end
-
-  # config.around(:each, :vcr) do |example|
-  #   name = example.metadata[:full_description].split(/\s+/, 2).join("/").underscore.gsub(/[^\w\/]+/, "_")
-  #   options = example.metadata.slice(:record, :match_requests_on).except(:example_group)
-  #   VCR.use_cassette(name, options) { example.call }
-  # end
 end
-
-# VCR.configure do |c|
-#   c.hook_into :fakeweb
-#   c.cassette_library_dir = 'spec/vcr'
-#   c.allow_http_connections_when_no_cassette = true
-#   c.default_cassette_options = { :record => :all }
-# end
