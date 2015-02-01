@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.soundcloud.com/tracks?client_id=7be89328fbf5eea69d5b70aaccf1125d&format=json&licence=cc-by-sa&limit=10&q=coco
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - SoundCloud Ruby Wrapper 0.13.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Content-Type, Origin
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Date
+      Cache-Control:
+      - max-age=600, public
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Feb 2015 00:51:16 GMT
+      Etag:
+      - '"77c1a0c409abdc96051002a48648bc88"'
+      Last-Modified:
+      - Sun, 01 Feb 2015 00:44:25 GMT
+      Server:
+      - ECS (lga/1386)
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - HIT
+      Content-Length:
+      - '17042'
+    body:
+      encoding: UTF-8
+      string: '[{"kind":"track","id":178204007,"created_at":"2014/11/23 02:18:05 +0000","user_id":119652935,"duration":245102,"commentable":true,"state":"finished","original_content_size":2768432,"last_modified":"2014/12/31
+        04:20:23 +0000","sharing":"public","tag_list":"soundcloud:source=android-record","permalink":"o-t-genasis-im-in-love-with","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":null,"title":"O.T.
+        Genasis-Im in love with the CoCo","description":null,"label_name":null,"release":null,"track_type":"recording","key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"ogg","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/178204007","user":{"id":119652935,"kind":"user","permalink":"realstreetnigga","username":"realstreetnigga","last_modified":"2015/01/17
+        00:24:12 +0000","uri":"https://api.soundcloud.com/users/119652935","permalink_url":"http://soundcloud.com/realstreetnigga","avatar_url":"https://i1.sndcdn.com/avatars-000110911776-g9xtev-large.jpg"},"created_with":{"id":3152,"kind":"app","name":"SoundCloud
+        Android","uri":"https://api.soundcloud.com/apps/3152","permalink_url":"http://soundcloud.com/apps/android","external_url":"https://market.android.com/details?id=com.soundcloud.android"},"permalink_url":"http://soundcloud.com/realstreetnigga/o-t-genasis-im-in-love-with","artwork_url":"https://i1.sndcdn.com/artworks-000098016074-j36khb-large.jpg","waveform_url":"https://w1.sndcdn.com/3sczctmYYZOO_m.png","stream_url":"https://api.soundcloud.com/tracks/178204007/stream","playback_count":5367555,"download_count":0,"favoritings_count":101934,"comment_count":778,"attachments_uri":"https://api.soundcloud.com/tracks/178204007/attachments","policy":"ALLOW"},{"kind":"track","id":183008970,"created_at":"2014/12/24
+        19:09:17 +0000","user_id":60663,"duration":236690,"commentable":true,"state":"finished","original_content_size":9467877,"last_modified":"2015/01/27
+        02:39:20 +0000","sharing":"public","tag_list":"","permalink":"ot-genasis-coco-borgore-remix","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Dubstep","title":"O.T
+        Genasis - Coco , Borgore Remix","description":"Happy holidays ! \n\nDownload
+        original -  http://smarturl.it/OTGCoCo\nFollow O.T Genasis -  http://twitter.com/otgenasis\n\n","label_name":"","release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/183008970","user":{"id":60663,"kind":"user","permalink":"borgore","username":"Borgore","last_modified":"2015/01/09
+        19:33:20 +0000","uri":"https://api.soundcloud.com/users/60663","permalink_url":"http://soundcloud.com/borgore","avatar_url":"https://i1.sndcdn.com/avatars-000104851602-u5l28v-large.jpg"},"permalink_url":"http://soundcloud.com/borgore/ot-genasis-coco-borgore-remix","artwork_url":"https://i1.sndcdn.com/artworks-000101250404-5p3g6h-large.jpg","waveform_url":"https://w1.sndcdn.com/xq1edjxDShyS_m.png","stream_url":"https://api.soundcloud.com/tracks/183008970/stream","playback_count":1075987,"download_count":0,"favoritings_count":34562,"comment_count":935,"attachments_uri":"https://api.soundcloud.com/tracks/183008970/attachments","policy":"ALLOW"},{"kind":"track","id":176816262,"created_at":"2014/11/14
+        01:26:37 +0000","user_id":3068013,"duration":160013,"commentable":true,"state":"finished","original_content_size":3201591,"last_modified":"2015/01/19
+        19:03:16 +0000","sharing":"public","tag_list":"ot genesis coco young dom tmo","permalink":"im-in-love-with-the-coco-freestyle","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Freestyle","title":"CoCo
+        ( Video On DomTMO.com )","description":"#DOMination","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/176816262","user":{"id":3068013,"kind":"user","permalink":"domtmo","username":"Young
+        Dom","last_modified":"2014/11/28 21:55:38 +0000","uri":"https://api.soundcloud.com/users/3068013","permalink_url":"http://soundcloud.com/domtmo","avatar_url":"https://i1.sndcdn.com/avatars-000112804694-jb9o4n-large.jpg"},"permalink_url":"http://soundcloud.com/domtmo/im-in-love-with-the-coco-freestyle","artwork_url":"https://i1.sndcdn.com/artworks-000097092378-6jeo8m-large.jpg","waveform_url":"https://w1.sndcdn.com/d86gZsRvaeJc_m.png","stream_url":"https://api.soundcloud.com/tracks/176816262/stream","download_url":"https://api.soundcloud.com/tracks/176816262/download","playback_count":1529461,"download_count":172160,"favoritings_count":24475,"comment_count":148,"attachments_uri":"https://api.soundcloud.com/tracks/176816262/attachments","policy":"ALLOW"},{"kind":"track","id":175233098,"created_at":"2014/11/04
+        01:32:12 +0000","user_id":11838707,"duration":241131,"commentable":true,"state":"finished","original_content_size":3857455,"last_modified":"2014/12/13
+        19:16:06 +0000","sharing":"public","tag_list":"","permalink":"ot-genasis-coco","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"TYB","title":"O.T.
+        Genasis - CoCo","description":"IM  IN LOVE WITH THE COCO","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"cc-by-nc-nd","uri":"https://api.soundcloud.com/tracks/175233098","user":{"id":11838707,"kind":"user","permalink":"young-handsome-da-problem","username":"Young
+        Handsome DA Problem","last_modified":"2015/01/10 21:54:52 +0000","uri":"https://api.soundcloud.com/users/11838707","permalink_url":"http://soundcloud.com/young-handsome-da-problem","avatar_url":"https://i1.sndcdn.com/avatars-000024908597-emudk5-large.jpg"},"permalink_url":"http://soundcloud.com/young-handsome-da-problem/ot-genasis-coco","artwork_url":"https://i1.sndcdn.com/artworks-000096047567-whivqn-large.jpg","waveform_url":"https://w1.sndcdn.com/Fuc7EOb2clDv_m.png","stream_url":"https://api.soundcloud.com/tracks/175233098/stream","playback_count":2433098,"download_count":100,"favoritings_count":28255,"comment_count":126,"attachments_uri":"https://api.soundcloud.com/tracks/175233098/attachments","policy":"ALLOW"},{"kind":"track","id":183126157,"created_at":"2014/12/25
+        18:35:19 +0000","user_id":118581611,"duration":363370,"commentable":true,"state":"finished","original_content_size":4359744,"last_modified":"2015/01/27
+        22:48:32 +0000","sharing":"public","tag_list":"\"montana of 300\" \"montana
+        of 300 coco\" \"montana of 300 coco remix\" \"montnaa of 300 coco freestyle\"
+        \"montana of 300 freestyle\" \"montana of 300 remix\" \"coco freestyle\"","permalink":"montana-of-300-coco-freestyle","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"MONTANAOF300","title":"Montana
+        of 300 - Coco Remix","description":"","label_name":"","release":"","track_type":"","key_signature":"","isrc":"","video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/183126157","user":{"id":118581611,"kind":"user","permalink":"montanaof300fbg","username":"MONTANA
+        of 300","last_modified":"2014/12/26 18:02:31 +0000","uri":"https://api.soundcloud.com/users/118581611","permalink_url":"http://soundcloud.com/montanaof300fbg","avatar_url":"https://i1.sndcdn.com/avatars-000110790896-efudzh-large.jpg"},"permalink_url":"http://soundcloud.com/montanaof300fbg/montana-of-300-coco-freestyle","artwork_url":"https://i1.sndcdn.com/artworks-000101331826-15v210-large.jpg","waveform_url":"https://w1.sndcdn.com/ilRXtm1ocQQU_m.png","stream_url":"https://api.soundcloud.com/tracks/183126157/stream","playback_count":605211,"download_count":100,"favoritings_count":13758,"comment_count":80,"attachments_uri":"https://api.soundcloud.com/tracks/183126157/attachments","policy":"ALLOW"},{"kind":"track","id":187074369,"created_at":"2015/01/21
+        03:02:41 +0000","user_id":133752388,"duration":244162,"commentable":true,"state":"finished","original_content_size":3098160,"last_modified":"2015/01/31
+        22:31:32 +0000","sharing":"public","tag_list":"Hip-Hop Rap","permalink":"lil-wayne-coco-sorry-for-the-wait-2","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":"http://click.dj/lilwayne/lil-wayne-coco-sorry-for-the-wait-2","label_id":null,"purchase_title":null,"genre":"LilWayne","title":"Lil
+        Wayne - Coco \"Sorry For The Wait 2\" *Click Buy For Free Download*","description":"Free
+        Download: http://click.dj/lilwayne/lil-wayne-coco-sorry-for-the-wait-2","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/187074369","user":{"id":133752388,"kind":"user","permalink":"sorry-for-the-wait-2","username":"Sorry
+        For The Wait 2","last_modified":"2015/01/26 02:43:19 +0000","uri":"https://api.soundcloud.com/users/133752388","permalink_url":"http://soundcloud.com/sorry-for-the-wait-2","avatar_url":"https://i1.sndcdn.com/avatars-000125982168-clu9c8-large.jpg"},"permalink_url":"http://soundcloud.com/sorry-for-the-wait-2/lil-wayne-coco-sorry-for-the-wait-2","artwork_url":null,"waveform_url":"https://w1.sndcdn.com/fM1mewizaOS6_m.png","stream_url":"https://api.soundcloud.com/tracks/187074369/stream","playback_count":523085,"download_count":0,"favoritings_count":16667,"comment_count":30,"attachments_uri":"https://api.soundcloud.com/tracks/187074369/attachments","policy":"ALLOW"},{"kind":"track","id":179787435,"created_at":"2014/12/03
+        15:19:16 +0000","user_id":95635916,"duration":241106,"commentable":true,"state":"finished","original_content_size":3857085,"last_modified":"2015/01/14
+        23:38:49 +0000","sharing":"public","tag_list":"\"new hip hop\"","permalink":"ot-genasis-coco-im-in-love-with-the-coco","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Hip
+        Hop","title":"O.T. Genasis - CoCo - Im in Love with the Coco","description":"O.T.
+        Genasis - CoCo - Im in Love with the Coco - New Hip Hop November 2014","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/179787435","user":{"id":95635916,"kind":"user","permalink":"hilary-predale","username":"Hilary
+        Predale","last_modified":"2014/10/22 18:19:02 +0000","uri":"https://api.soundcloud.com/users/95635916","permalink_url":"http://soundcloud.com/hilary-predale","avatar_url":"https://i1.sndcdn.com/avatars-000109810206-y3o2lm-large.jpg"},"permalink_url":"http://soundcloud.com/hilary-predale/ot-genasis-coco-im-in-love-with-the-coco","artwork_url":"https://i1.sndcdn.com/artworks-000099084629-3j8zs8-large.jpg","waveform_url":"https://w1.sndcdn.com/xp6N6nV6s60P_m.png","stream_url":"https://api.soundcloud.com/tracks/179787435/stream","playback_count":574986,"download_count":0,"favoritings_count":12883,"comment_count":54,"attachments_uri":"https://api.soundcloud.com/tracks/179787435/attachments","policy":"ALLOW"},{"kind":"track","id":179044925,"created_at":"2014/11/28
+        16:14:10 +0000","user_id":16837178,"duration":127880,"commentable":true,"state":"finished","original_content_size":5307700,"last_modified":"2014/11/28
+        17:49:18 +0000","sharing":"public","tag_list":"djtaj","permalink":"coco-dj-taj-remix-teamtaj-djliltaj","streamable":true,"embeddable_by":"all","downloadable":true,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"djtaj","title":"Coco
+        (Dj Taj Remix) #TeamTaj @DjLilTaj","description":"Something New! Re-Post &
+        Share Now! \r\nBookings: 917.600.2127 or email BookDjTaj@gmail.com\r\nJersey
+        Club Remix","label_name":"","release":"","track_type":"original","key_signature":"","isrc":"","video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/179044925","user":{"id":16837178,"kind":"user","permalink":"teamtaj","username":"TeamTaj","last_modified":"2015/01/30
+        00:28:29 +0000","uri":"https://api.soundcloud.com/users/16837178","permalink_url":"http://soundcloud.com/teamtaj","avatar_url":"https://i1.sndcdn.com/avatars-000118925768-c63gbo-large.jpg"},"permalink_url":"http://soundcloud.com/teamtaj/coco-dj-taj-remix-teamtaj-djliltaj","artwork_url":"https://i1.sndcdn.com/artworks-000098583693-g9240l-large.jpg","waveform_url":"https://w1.sndcdn.com/BQkQKdUjiRb7_m.png","stream_url":"https://api.soundcloud.com/tracks/179044925/stream","download_url":"https://api.soundcloud.com/tracks/179044925/download","playback_count":437035,"download_count":15774,"favoritings_count":14057,"comment_count":161,"attachments_uri":"https://api.soundcloud.com/tracks/179044925/attachments","policy":"ALLOW"},{"kind":"track","id":178000217,"created_at":"2014/11/21
+        17:35:20 +0000","user_id":335414,"duration":270105,"commentable":true,"state":"finished","original_content_size":11194907,"last_modified":"2015/01/20
+        18:12:26 +0000","sharing":"public","tag_list":"Genasis MAKJ Remix","permalink":"ot-genasis-coco-makj-remix-1","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"O.T.","title":"O.T.
+        Genasis - CoCo (MAKJ Remix)","description":"For more info:\nwww.DJMAKJ.com\nwww.twitter.com/MAKJ\nwww.facebook.com/MAKJOfficial\ninstagram.com/djmakj\n\n\nMaster
+        Done By: www.SpiroOfficial.com","label_name":"ZippyShare Records","release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/178000217","user":{"id":335414,"kind":"user","permalink":"makj","username":"MAKJ","last_modified":"2015/01/30
+        07:47:55 +0000","uri":"https://api.soundcloud.com/users/335414","permalink_url":"http://soundcloud.com/makj","avatar_url":"https://i1.sndcdn.com/avatars-000128166162-j66v0h-large.jpg"},"permalink_url":"http://soundcloud.com/makj/ot-genasis-coco-makj-remix-1","artwork_url":"https://i1.sndcdn.com/artworks-000097879202-ocz7ag-large.jpg","waveform_url":"https://w1.sndcdn.com/KciLHthHshWu_m.png","stream_url":"https://api.soundcloud.com/tracks/178000217/stream","playback_count":563044,"download_count":25,"favoritings_count":17044,"comment_count":292,"attachments_uri":"https://api.soundcloud.com/tracks/178000217/attachments","policy":"ALLOW"},{"kind":"track","id":187078069,"created_at":"2015/01/21
+        03:32:34 +0000","user_id":76675200,"duration":244189,"commentable":true,"state":"finished","original_content_size":3906245,"last_modified":"2015/01/29
+        00:26:01 +0000","sharing":"public","tag_list":"\"Lil Wayne - Coco\"","permalink":"lil-wayne-coco-remix-sorryforthewait2","streamable":true,"embeddable_by":"all","downloadable":false,"purchase_url":null,"label_id":null,"purchase_title":null,"genre":"Lil
+        Wayne - Coco (Remix)","title":"Lil Wayne - Coco (Remix) #SorryForTheWait2","description":"Submit
+        Music. HottestRapSongs@gmail.com\n702-608-3891","label_name":null,"release":null,"track_type":null,"key_signature":null,"isrc":null,"video_url":null,"bpm":null,"release_year":null,"release_month":null,"release_day":null,"original_format":"mp3","license":"all-rights-reserved","uri":"https://api.soundcloud.com/tracks/187078069","user":{"id":76675200,"kind":"user","permalink":"lltnechisrryfrtewittm","username":"SORRY
+        FOR THE WAIT 2","last_modified":"2015/01/31 19:11:20 +0000","uri":"https://api.soundcloud.com/users/76675200","permalink_url":"http://soundcloud.com/lltnechisrryfrtewittm","avatar_url":"https://i1.sndcdn.com/avatars-000127174116-6hd3jb-large.jpg"},"permalink_url":"http://soundcloud.com/lltnechisrryfrtewittm/lil-wayne-coco-remix-sorryforthewait2","artwork_url":"https://i1.sndcdn.com/artworks-000104063688-y7v7kr-large.jpg","waveform_url":"https://w1.sndcdn.com/ny3nszFMDhxB_m.png","stream_url":"https://api.soundcloud.com/tracks/187078069/stream","playback_count":259553,"download_count":0,"favoritings_count":10250,"comment_count":27,"attachments_uri":"https://api.soundcloud.com/tracks/187078069/attachments","policy":"ALLOW"}]'
+    http_version: 
+  recorded_at: Sun, 01 Feb 2015 00:51:16 GMT
+recorded_with: VCR 2.9.3
