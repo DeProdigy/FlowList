@@ -32,6 +32,8 @@ group :development, :test do
   gem 'pry-nav'
   gem 'vcr'
   gem 'webmock'
+  gem 'populator'
+  gem 'faker'
 end
 
 group :development do
