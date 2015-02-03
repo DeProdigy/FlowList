@@ -10,6 +10,7 @@ env:
 branches:
   only:
   - master
+  - qa
 notifications:
   email:
   - igor.yuzovitskiy@gmail.com
@@ -19,7 +20,10 @@ notifications:
 deploy:
   provider: heroku
   api_key:
-    secure: qeLhyeEkpSrKIAc7reJkXqeNMM/rM2br1xAafnTh29dxyU4K7zraxdC27GWNwJilaPWs9juinHQXSEMGHJnhuEiGB7dIBnAB4QTEyQpTuaq8CNr0ud523p6Fsu7TRe8I/KZZM8jPaiIWT9vzF7BIR9EMR5/eic2Rm3zG8V0a2k4=
-  app: flowlist
-  on:
-    repo: DeProdigy/FlowList
+    master:
+      secure: qeLhyeEkpSrKIAc7reJkXqeNMM/rM2br1xAafnTh29dxyU4K7zraxdC27GWNwJilaPWs9juinHQXSEMGHJnhuEiGB7dIBnAB4QTEyQpTuaq8CNr0ud523p6Fsu7TRe8I/KZZM8jPaiIWT9vzF7BIR9EMR5/eic2Rm3zG8V0a2k4=
+    qa:
+      secure: XgqG4dHHe0LkfaqENfUzw2+6a9A8ipeLr9xLx3WI1JzBspSefw88fKDUrtFchevhCwRKw7363cyLFbndOA1SBqSka0ZQrhx99KcTP0SbKmD6ZlwL7Fl0GlncXsRi3ChPe2Lk/hQcmhMfsScXxXJlPx/6FDxr1rYdjNcI8W9Jf24=
+  app:
+    master: flowlist
+    qa: qa-flowlist
