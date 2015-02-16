@@ -16,7 +16,6 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'haml-rails'
 gem 'underscore-rails'
-gem 'bourbon'
 
 gem 'soundcloud'
 
