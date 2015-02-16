@@ -23,16 +23,10 @@ gem 'soundcloud'
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
-  gem 'capybara'
-  gem 'capybara-webkit'
-  gem 'selenium-webdriver'
-  gem 'jasmine'
   gem 'awesome_print'
   gem 'pry-rails'
   gem 'pry-rescue'
   gem 'pry-nav'
-  gem 'vcr'
-  gem 'webmock'
   gem 'populator'
   gem 'faker'
 end
@@ -48,6 +42,12 @@ group :development do
 end
 
 group :test do
+  gem 'vcr'
+  gem 'webmock'
+  gem 'jasmine'
+  gem 'capybara'
+  gem 'capybara-webkit'
+  gem 'selenium-webdriver'
   gem 'nyan-cat-formatter'
   gem 'simplecov', :require => false
 end

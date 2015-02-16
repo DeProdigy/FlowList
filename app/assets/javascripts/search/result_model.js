@@ -6,7 +6,7 @@ Result.prototype.constructor = Song;
 
 Result.prototype = {
   render: function() {
-    $('body').append(tracksTemplate(this));
+    $('.results-container').append( tracksTemplate(this) );
     return this;
   },
 

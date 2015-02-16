@@ -23,4 +23,6 @@
 
 //= require search/result_model
 //= require search/results_collection
+//= require search/overlay_template
+//= require search/view_manager
 //= require search/search_controller

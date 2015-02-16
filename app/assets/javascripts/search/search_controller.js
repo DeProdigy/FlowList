@@ -1,13 +1,21 @@
 $(function() {
-  $('.search-form').on('submit', function(e) {
+  $('body').on('submit', '.search-form', function(e) {
     e.preventDefault();
-    ResultsColletion.get( $('#user-input').val() );
+    ResultsColletion.get( $('.search-user-input').val() );
   });
 
-  $('body').on('click', '.results', function(e) {
-    var result_id = getId(this);
-            result  = _.findWhere(results, {id: result_id});
+  $('body').on('click', '.result', function(e) {
+    var resultId = getId(this),
+          result  = _.findWhere(results, {id: resultId});
 
     result.save();
+  });
+
+  $('body').on('click', '.add-song-icon', function(e) {
+    showOverlay();
+  });
+
+  $('body').on('click', '.search-close', function(e) {
+    closeOverlay();
   });
 });
